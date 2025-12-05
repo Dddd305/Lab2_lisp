@@ -44,7 +44,7 @@ CL-USER> (compress-list '(1 a a 3 3 3 b))
       nil
       (reverse-and-nest-tail-helper (cdr lst) (list (car lst)))))
 ```
-###Тестові набори та утиліти
+### Тестові набори та утиліти
 ```lisp
 (defun check-function (name actual expected)
   "Execute `my-reverse' on `input', compare result with `expected' and print
@@ -68,7 +68,7 @@ CL-USER> (compress-list '(1 a a 3 3 3 b))
                   (reverse-and-nest-tail nil) 
                   nil))
 ```
-###Тестування
+### Тестування
 ```lisp
 CL-USER> (test-reverse-and-nest-tail)
 
